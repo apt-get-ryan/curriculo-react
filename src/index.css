@@ -48,6 +48,14 @@ body {
 .items-center {
   align-items: center;
 }
+
+.content-table {
+  grid-template-columns: repeat(2, 1fr);
+}
+.content-table li {
+  list-style: none;
+}
+
 /* fontes */
 h1 {
   font-size: 1.25rem;
@@ -88,7 +96,9 @@ h2 {
 }
 
 @media (min-width: 720px) {
-  
+  .content-table {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
