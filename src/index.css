@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+:root, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(206, 212, 218);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* layout */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.radius {
+  border-radius: 6px;
+}
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+.box {
+  padding: 12px 8px;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
+}
+
+.in-line, p {
+  display: inline;
+}
+
+.content-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+/* fontes */
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 700;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+/* backgrounds */
+.bg-lit-1 {
+  background-color: rgb(206, 212, 218);
+}
+.bg-lit-2 {
+  background-color: rgb(228, 229, 231);
+}
+
+/* tamanhos */
+
+.max-width-lg {
+  max-width: 1024px;
+}
+.max-width-md {
+  max-width: 720px;
+}
+.max-width-sm {
+  max-width: 576px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 720px) {
+  
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
