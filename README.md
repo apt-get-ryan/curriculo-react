@@ -4,6 +4,8 @@ Candidato: Ryan Guimarães
 
 Data: 03/07/2026
 
+Objetivo: Criar uma página de apresentação demonstrando a utilização e organização de tecnologias de desenvolvimento web, utlizando código feito à mão para demonstrar conhecimento e utilizando menos importações de bibliotecas a fim de demonstrar bases sólidas
+
 Tecnologias utilizadas:
 
 - HTML
