@@ -39,7 +39,9 @@ body {
 .in-line, p {
   display: inline;
 }
-
+.gap-10 {
+  gap: 10px;
+}
 .content-center {
   justify-content: center;
 }

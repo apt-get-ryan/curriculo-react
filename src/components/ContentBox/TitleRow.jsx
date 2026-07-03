@@ -1,6 +1,6 @@
 function TitleRow({title, icon}) {
   return (
-    <div className='flex' style={{paddingLeft: 10}}>
+    <div className='flex gap-10' style={{paddingLeft: 10}}>
       {icon}
       <h2>
         {title}

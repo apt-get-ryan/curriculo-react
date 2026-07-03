@@ -1,0 +1,15 @@
+@keyframes wave {
+  from {
+    transform: rotate(-16deg);
+  }
+  to {
+    transform: rotate(-36deg);
+  }
+}
+
+.animate-wave {
+  animation: wave 600ms ease-in-out alternate infinite;
+  translate: 2px -3px;
+  transform-origin: bottom right;
+  will-change: transform;
+}
