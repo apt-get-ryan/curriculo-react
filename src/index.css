@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+:root, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(206, 212, 218);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* layout e utilidades */
+header {
+  padding: 6px ;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.radius {
+  border-radius: 6px;
+}
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+.box {
+  padding: 12px 8px;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.block {
+  display: block;
+}
+
+.in-line, p {
+  display: inline;
+}
+.gap-10 {
+  gap: 10px;
+}
+.p-x-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.content-table {
+  grid-template-columns: repeat(2, 1fr);
+}
+.content-table li {
+  list-style: none;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  text-decoration-color: #000000;
+}
+.contact-link span {
+  color: #000000;
+}
+
+.contact-link:hover span{
+  font-weight: 600;
+}
+
+.custom-icon {
+  user-select: none;
+  height: 1.1em;
+  width: auto;
+  display: inline;
+  vertical-align: middle;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0 20px;
+}
+
+/* fontes */
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 700;
+}
+.font-bold {
+  font-weight: 700;
+}
+.color-whatsapp {
+  color: #25d366;
+}
+
+.color-linkedin {
+  color: #0e76a8;
+}
+
+.color-github {
+  color: #101411;
+}
+.color-gmail {
+  color: #000000;
+}
+/* backgrounds */
+.bg-1 {
+  background-color: rgb(206, 212, 218);
+}
+.bg-2 {
+  background-color: rgb(228, 229, 231);
+}
+
+/* tamanhos */
+
+.max-width-lg {
+  max-width: 1024px;
+}
+.max-width-md {
+  max-width: 720px;
+}
+.max-width-sm {
+  max-width: 576px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 720px) {
+  .content-table {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+  }
+  body {
+    background-color: #0a121a;
+  }
+  .bg-2 {
+    background-color: #0d1721;
+  }
+  .contact-link {
+    text-decoration-color: #ffffff;
+  }
+  .contact-link span,
+  .color-github {
+    color: #ffffff;
+  }
+}
