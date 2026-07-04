@@ -121,10 +121,10 @@ h2 {
   color: #000000;
 }
 /* backgrounds */
-.bg-lit-1 {
+.bg-1 {
   background-color: rgb(206, 212, 218);
 }
-.bg-lit-2 {
+.bg-2 {
   background-color: rgb(228, 229, 231);
 }
 
@@ -158,4 +158,23 @@ h2 {
 
 @media (min-width: 1200px) {
   
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+  }
+  body {
+    background-color: #0a121a;
+  }
+  .bg-2 {
+    background-color: #0d1721;
+  }
+  .contact-link {
+    text-decoration-color: #ffffff;
+  }
+  .contact-link span,
+  .color-github {
+    color: #ffffff;
+  }
 }

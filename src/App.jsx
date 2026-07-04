@@ -9,16 +9,16 @@ function App() {
     <div>
       <Cabecalho/>
       <main className="container">
-        <ContentBox title={"Sobre Mim"} icon={<AnimatedWave/>}>
+        <ContentBox title={"Sobre Mim"} icon={<AnimatedWave aria-hidden="true" focusable="false"/>}>
           <p>Meu nome é Ryan Guimarães e sou Desenvolvedor com foco em React e Node.js. Tenho formação técnica e superior em andamento em Análise e Desenvolvimento de Sistemas, e uma base sólida em desenvolvimento web adquirida tanto em ambiente corporativo quanto em projetos pessoais.</p>
         </ContentBox>
-        <ContentBox title={"Formação"} icon={<FaSchool/>}>
+        <ContentBox title={"Formação"} icon={<FaSchool aria-hidden="true" focusable="false"/>}>
         <Info.List>
           <Info.Item grau="Técnico" instituicao="ETEC Joaquim Ferreira do Amaral" conclusao="12/2021" concluido/>
           <Info.Item grau="Superior" instituicao="Centro Universitário União das Américas Descomplica" conclusao="06/2027"/>
         </Info.List>
         </ContentBox>
-        <ContentBox title={"Conhecimentos"} icon={<FaBook/>}>
+        <ContentBox title={"Conhecimentos"} icon={<FaBook aria-hidden="true" focusable="false"/>}>
           <ul className="grid content-table">
             <li>HTML</li>
             <li>CSS</li>
@@ -51,16 +51,16 @@ function App() {
         </ContentBox>
         <ContentBox title={"Contato"} icon={<FaIdCard/>}>
           <a className="contact-link color-whatsapp" target="_blank" href="https:\\wa.me/5514991314167">
-            <FaWhatsapp /><span>(14) 99131-4167</span>
+            <FaWhatsapp aria-hidden="true" focusable="false" /><span>(14) 99131-4167</span>
           </a>
           <a className="contact-link color-gmail" target="_blank" href="mailto:ryan.guimar10@gmail.com">
             <IconGmail/><span>ryan.guimar10@gmail.com</span>
           </a>
           <a className="contact-link color-linkedin" target="_blank" href="https:\\www.linkedin.com/in/ryan-guimarães-94925824b">
-            <FaLinkedin/><span>Meu LinkedIn</span>
+            <FaLinkedin aria-hidden="true" focusable="false"/><span>Meu LinkedIn</span>
           </a>
           <a className="contact-link color-github" href="https://github.com/apt-get-ryan" target="_blank">
-            <FaGithub/><span>Meu GitHub</span>
+            <FaGithub aria-hidden="true" focusable="false"/><span>Meu GitHub</span>
           </a>
         </ContentBox>
       </main>
