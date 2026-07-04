@@ -11,7 +11,10 @@ body {
   background-color: rgb(206, 212, 218);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* layout */
+/* layout e utilidades */
+header {
+  padding: 6px ;
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -42,11 +45,17 @@ body {
 .gap-10 {
   gap: 10px;
 }
-.content-center {
-  justify-content: center;
+.p-x-8 {
+  padding-left: 8px;
+  padding-right: 8px;
 }
+
 .items-center {
   align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .content-table {
@@ -54,6 +63,29 @@ body {
 }
 .content-table li {
   list-style: none;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+}
+
+.contact-link:hover {
+  font-weight: 600;
+}
+
+.custom-icon {
+  user-select: none;
+  height: 1.1em;
+  width: auto;
+  display: inline;
+  vertical-align: middle;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 /* fontes */
@@ -70,7 +102,20 @@ h2 {
 .font-bold {
   font-weight: 700;
 }
+.color-whatsapp {
+  color: #25d366;
+}
 
+.color-linkedin {
+  color: #0e76a8;
+}
+
+.color-github {
+  color: #101411;
+}
+.color-gmail {
+  color: #000000;
+}
 /* backgrounds */
 .bg-lit-1 {
   background-color: rgb(206, 212, 218);

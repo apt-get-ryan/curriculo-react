@@ -1,8 +1,9 @@
 import ContentBox from "./components/ContentBox";
 import Cabecalho from "./components/Cabecalho";
-import { FaSchool, FaBook, FaIdCard} from "react-icons/fa6";
+import { FaSchool, FaBook, FaIdCard, FaWhatsapp, FaLinkedin, FaGithub} from "react-icons/fa6";
 import AnimatedWave from "./components/AnimatedWave";
 import Info from "./components/Info";
+import IconGmail from "./components/IconGmail";
 function App() {
   return (
     <div>
@@ -49,7 +50,18 @@ function App() {
           </ul>
         </ContentBox>
         <ContentBox title={"Contato"} icon={<FaIdCard/>}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam nihil illo inventore, dolores veritatis nam sit cupiditate deserunt quod repudiandae nesciunt incidunt ab et obcaecati in animi quasi dolorem?
+          <a className="contact-link color-whatsapp" target="_blank" href="https:\\wa.me/5514991314167">
+            <FaWhatsapp />{"(14) 99131-4167"}
+          </a>
+          <a className="contact-link color-gmail" target="_blank" href="mailto:ryan.guimar10@gmail.com">
+            <IconGmail/>ryan.guimar10@gmail.com
+          </a>
+          <a className="contact-link color-linkedin" target="_blank" href="https:\\www.linkedin.com/in/ryan-guimarães-94925824b">
+            <FaLinkedin/>Meu LinkedIn
+          </a>
+          <a className="contact-link color-github" href="https://github.com/apt-get-ryan" target="_blank">
+            <FaGithub/>Meu GitHub
+          </a>
         </ContentBox>
       </main>
     </div>
