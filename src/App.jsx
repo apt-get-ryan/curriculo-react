@@ -51,16 +51,16 @@ function App() {
         </ContentBox>
         <ContentBox title={"Contato"} icon={<FaIdCard/>}>
           <a className="contact-link color-whatsapp" target="_blank" href="https:\\wa.me/5514991314167">
-            <FaWhatsapp />{"(14) 99131-4167"}
+            <FaWhatsapp /><span>(14) 99131-4167</span>
           </a>
           <a className="contact-link color-gmail" target="_blank" href="mailto:ryan.guimar10@gmail.com">
-            <IconGmail/>ryan.guimar10@gmail.com
+            <IconGmail/><span>ryan.guimar10@gmail.com</span>
           </a>
           <a className="contact-link color-linkedin" target="_blank" href="https:\\www.linkedin.com/in/ryan-guimarães-94925824b">
-            <FaLinkedin/>Meu LinkedIn
+            <FaLinkedin/><span>Meu LinkedIn</span>
           </a>
           <a className="contact-link color-github" href="https://github.com/apt-get-ryan" target="_blank">
-            <FaGithub/>Meu GitHub
+            <FaGithub/><span>Meu GitHub</span>
           </a>
         </ContentBox>
       </main>
