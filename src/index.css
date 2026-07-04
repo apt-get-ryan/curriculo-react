@@ -92,6 +92,10 @@ header {
   overflow: hidden;
 }
 
+ul {
+  padding: 0 20px;
+}
+
 /* fontes */
 h1 {
   font-size: 1.25rem;
