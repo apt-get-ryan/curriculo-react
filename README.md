@@ -10,6 +10,7 @@ Tecnologias utilizadas:
 - CSS
 - React.js
 - Vite
+- React Icons
 
 ## Instruções de execução
 
