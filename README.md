@@ -1,4 +1,4 @@
-# Projeto em construção
+# Projeto Apresentação pessoal - React.js
 
 Candidato: Ryan Guimarães
 
