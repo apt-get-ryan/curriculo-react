@@ -152,6 +152,10 @@ ul {
   display: flex;
 }
 
+.select-none {
+  user-select: none;
+}
+
 /* fontes */
 h1 {
   font-size: 1.25rem;
