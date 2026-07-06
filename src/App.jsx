@@ -4,6 +4,7 @@ import { FaSchool, FaBook, FaIdCard, FaWhatsapp, FaLinkedin, FaGithub} from "rea
 import AnimatedWave from "./components/AnimatedWave";
 import Info from "./components/Info";
 import IconGmail from "./components/IconGmail";
+import ThemeButton from "./components/ThemeButton";
 function App() {
   return (
     <div>
@@ -63,6 +64,7 @@ function App() {
             <FaGithub aria-hidden="true" focusable="false"/><span>Meu GitHub</span>
           </a>
         </ContentBox>
+        <ThemeButton/>
       </main>
     </div>
   )

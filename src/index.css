@@ -5,10 +5,14 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  --bg-1: rgb(206, 212, 218);
+  --bg-2: rgb(228, 229, 231);
+  --text: #000000;
 }
 
 body {
-  background-color: rgb(206, 212, 218);
+  background-color: var(--bg-1);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
 /* layout e utilidades */
@@ -70,10 +74,10 @@ header {
   align-items: center;
   gap: 8px;
   font-size: 1.25rem;
-  text-decoration-color: #000000;
+  text-decoration-color: var(--text);
 }
 .contact-link span {
-  color: #000000;
+  color: var(--text);
 }
 
 .contact-link:hover span{
@@ -94,6 +98,51 @@ header {
 
 ul {
   padding: 0 20px;
+}
+
+#themeButton {
+  anchor-name: --theme-button;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--bg-2);
+  color: var(--text);
+}
+[popover] {
+  position-anchor: --theme-button;
+  position-area: top;
+  left: anchor(left);
+  margin-bottom: 1em;
+  max-width: 200px;
+  border-radius: 6px;
+  display: none;
+  background-color: var(--bg-2);
+  border-width: 0px;
+  box-shadow: 0px 0px 2px #000;
+  flex-direction: column;
+  gap: 2px;
+}
+[popover] button {
+  width: 100%;
+  border: none;
+  background-color: var(--bg-1);
+  color: var(--text);
+  padding: 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+[popover] button:hover {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+[popover]:popover-open {
+  display: flex;
 }
 
 /* fontes */
@@ -126,10 +175,10 @@ h2 {
 }
 /* backgrounds */
 .bg-1 {
-  background-color: rgb(206, 212, 218);
+  background-color: var(--bg-1);
 }
 .bg-2 {
-  background-color: rgb(228, 229, 231);
+  background-color: var(--bg-2);
 }
 
 /* tamanhos */
@@ -164,21 +213,27 @@ h2 {
   
 }
 
+/* tema */
+body[data-theme="light"] {
+  --bg-1: rgb(206, 212, 218);
+  --bg-2: rgb(228, 229, 231);
+  --text: #000000;
+}
+body[data-theme="dark"] {
+  --bg-1: #0a121a;
+  --bg-2: #0d1721;
+  --text: #ffffff;
+}
+body[data-theme="dark"] .color-github {
+  color: var(--text)
+}
 @media (prefers-color-scheme: dark) {
-  :root {
-    color: #ffffff;
-  }
   body {
-    background-color: #0a121a;
+    --bg-1: #0a121a;
+    --bg-2: #0d1721;
+    --text: #ffffff;
   }
-  .bg-2 {
-    background-color: #0d1721;
-  }
-  .contact-link {
-    text-decoration-color: #ffffff;
-  }
-  .contact-link span,
   .color-github {
-    color: #ffffff;
+    color: var(--text)
   }
 }

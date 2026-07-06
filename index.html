@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo - Ryan Guimarães</title>
   </head>
-  <body>
+  <body data-theme="auto">
     <div id="root"></div>
+    <script>
+      const getStoredTheme = () => localStorage.getItem("theme");
+      const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+      const getPreferedTheme = () => {
+        const storedTheme = getStoredTheme();
+        if(storedTheme) {
+          return storedTheme;
+        }
+        return "auto";
+      }
+
+      const setTheme = (theme) => {
+        document.body.setAttribute("data-theme", theme);
+      }
+      setTheme(getPreferedTheme());
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
