@@ -51,16 +51,16 @@ function App() {
           </ul>
         </ContentBox>
         <ContentBox title={"Contato"} icon={<FaIdCard/>}>
-          <a className="contact-link color-whatsapp" target="_blank" href="https:\\wa.me/5514991314167">
+          <a className="contact-link color-whatsapp" target="_blank" href="https:\\wa.me/5514991314167" aria-label="Link de contato no WhatsApp (abre em nova guia)">
             <FaWhatsapp aria-hidden="true" focusable="false" /><span>(14) 99131-4167</span>
           </a>
-          <a className="contact-link color-gmail" target="_blank" href="mailto:ryan.guimar10@gmail.com">
+          <a className="contact-link color-gmail" target="_blank" href="mailto:ryan.guimar10@gmail.com" aria-label="Link de contato via e-mail (abre em nova guia)">
             <IconGmail/><span>ryan.guimar10@gmail.com</span>
           </a>
-          <a className="contact-link color-linkedin" target="_blank" href="https:\\www.linkedin.com/in/ryan-guimarães-94925824b">
+          <a className="contact-link color-linkedin" target="_blank" href="https:\\www.linkedin.com/in/ryan-guimarães-94925824b" aria-label="Link do meu perfil no LinkedIn (abre em nova guia)">
             <FaLinkedin aria-hidden="true" focusable="false"/><span>Meu LinkedIn</span>
           </a>
-          <a className="contact-link color-github" href="https://github.com/apt-get-ryan" target="_blank">
+          <a className="contact-link color-github" href="https://github.com/apt-get-ryan" target="_blank" aria-label="Link do meu perfil no GitHub (abre em nova guia)">
             <FaGithub aria-hidden="true" focusable="false"/><span>Meu GitHub</span>
           </a>
         </ContentBox>

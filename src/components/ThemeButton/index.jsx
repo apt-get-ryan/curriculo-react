@@ -12,7 +12,7 @@ function ThemeButton() {
   const icon = icons[theme];
   return (
     <>
-      <button id="themeButton" popoverTarget="themePopover">
+      <button id="themeButton" popoverTarget="themePopover" aria-controls="themePopover">
         {icon} Alterar tema
       </button>
       <div id="themePopover" popover="">

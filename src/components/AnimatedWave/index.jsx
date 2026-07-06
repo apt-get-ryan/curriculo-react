@@ -3,7 +3,7 @@ import "./animatedWave.css"
 function AnimatedWave() {
   return (
     <div className="animate-wave">
-      <FaHand/>
+      <FaHand aria-hidden="true" focusable="false"/>
     </div>
   )
 }
